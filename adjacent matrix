@@ -1,0 +1,15 @@
+list = [[1,2],[1,4],[2,2],[2,4],[3,2],[3,4],[4,2],[4,4],[5,4]]
+n = 8
+graph = []
+
+for i in range(8):
+    ra = []
+    for j in range(8):
+        ra.append(8)
+    graph.append(ra)
+for (u,v) in list:
+    graph [u] [v] = 1
+    graph [v] [u] = 1
+
+for k in graph:
+    print(k)
